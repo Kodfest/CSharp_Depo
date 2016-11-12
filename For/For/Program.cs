@@ -10,14 +10,17 @@ namespace For
     {
         static void Main(string[] args)
         {
+            #region For
             //for (int i = 0; i <= 10; i++)
             //{
-            //    Console.WriteLine("{0}. adım",i);
+            //    Console.WriteLine("{0}. adım", i);
             //}
             //Console.ReadKey();
+            #endregion
 
+            #region BirdenFazlaKontrol
             //bool durum = true;
-            //for (int i = 0; durum == true && i < 100; i = i + 5)
+            //for (int i = 0; durum == true && i < 100; i = i + 5) // for içinde birden fazla durumu kontrol edebiliriz
             //{
             //    if (i * 2 > 20)
             //    {
@@ -27,18 +30,21 @@ namespace For
             //    Console.WriteLine("{0} iken devam ediyorum", i);
             //}
             //Console.ReadKey();
+            #endregion
 
-
+            #region continue_break_kullanimi
             //for (int i = 0; i < 100; i = i + 5)
             //{
             //    if (i * 2 < 20)
             //    {
-            //        continue;
+            //        //break; // döngüyü sonlandırır
+            //        continue; // continue bir sonraki iterasyona gönderir yani bir sonraki i değerine
             //    }
 
             //    Console.WriteLine("{0} iken devam ediyorum", i);
             //}
             //Console.ReadKey();
+            #endregion
 
             #region [1,n]arasi_sayilarin_Toplami
 
