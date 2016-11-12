@@ -49,17 +49,26 @@ namespace Operatorler
 
             //sayi1 = sayi3 % sayi2; // Mod işlemi, sayi3 ün sayi2 ye bölümünden kalanı verir
 
-            int sayi = Convert.ToInt32(Console.ReadLine());
+            //int sayi = Convert.ToInt32(Console.ReadLine());
 
-            if (sayi % 2 == 0)
-            {
-                Console.WriteLine("Girilen Sayı Çift sayıdır.");
-            }
-            else
-            {
-                Console.WriteLine("Girilen Sayi Tek sayıdır.");
-            }
+            //if (sayi % 2 == 0)
+            //{
+            //    Console.WriteLine("Girilen Sayı Çift sayıdır.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Girilen Sayi Tek sayıdır.");
+            //}
 
+            //Console.ReadKey();
+
+            int a = 5;
+            int r1 = ++a; // Önce a 1 artar sonra r1 e atama yapar
+            // 6 - 6
+             a = 5;
+             r1 = a++; // Önce r1 e atama yapar sonra a 1 artar
+            // 6 - 5
+            Console.WriteLine(a + " - " + r1);
             Console.ReadKey();
         }
     }
