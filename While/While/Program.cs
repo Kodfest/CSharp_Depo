@@ -60,52 +60,52 @@ namespace While
             #endregion
 
             #region Kullanici_Devam_Etmek_Isredigi_Surece_Islem_Yap
-            //int sayi1, sayi2;
-            //char secim;
-            //bool durum = true;
+            int sayi1, sayi2;
+            char secim;
+            bool durum = true;
 
-            //while(durum == true)
-            //{
-            //    sayi1 = Convert.ToInt32(Console.ReadLine());
-            //    sayi2 = Convert.ToInt32(Console.ReadLine());
-            //    secim = Convert.ToChar(Console.ReadLine());
+            while (durum == true)
+            {
+                sayi1 = Convert.ToInt32(Console.ReadLine());
+                sayi2 = Convert.ToInt32(Console.ReadLine());
+                secim = Convert.ToChar(Console.ReadLine());
 
-            //    switch (secim)
-            //    {
-            //        case '+':
-            //            Console.WriteLine("Toplam: {0}", sayi1 + sayi2);
-            //            break;
+                switch (secim)
+                {
+                    case '+':
+                        Console.WriteLine("Toplam: {0}", sayi1 + sayi2);
+                        break;
 
-            //        case '-':
-            //            Console.WriteLine("Fark: {0}", sayi1 - sayi2);
-            //            break;
+                    case '-':
+                        Console.WriteLine("Fark: {0}", sayi1 - sayi2);
+                        break;
 
-            //        case '*':
-            //            Console.WriteLine("Çarpım: {0}", sayi1 * sayi2);
-            //            break;
+                    case '*':
+                        Console.WriteLine("Çarpım: {0}", sayi1 * sayi2);
+                        break;
 
-            //        case '/':
-            //            Console.WriteLine("Bölüm: {0}", sayi1 / sayi2);
-            //            break;
+                    case '/':
+                        Console.WriteLine("Bölüm: {0}", sayi1 / sayi2);
+                        break;
 
-            //        default:
-            //            Console.WriteLine("Böyle Bir İşlem Yok!");
-            //            break;
-            //    }
+                    default:
+                        Console.WriteLine("Böyle Bir İşlem Yok!");
+                        break;
+                }
 
-            //    Console.Write("Devam Etmek İstiyor Musun? (evet)");
-            //    string devam = Console.ReadLine();
+                Console.Write("Devam Etmek İstiyor Musun? (evet)");
+                string devam = Console.ReadLine();
 
-            //    if (devam == "evet")
-            //    {
-            //        durum = true;
-            //    }
-            //    else
-            //    {
-            //        durum = false;
-            //    }
-            //}
-            //Console.ReadKey();
+                if (devam == "evet")
+                {
+                    durum = true;
+                }
+                else
+                {
+                    durum = false;
+                }
+            }
+            Console.ReadKey();
             #endregion
 
             #region FaktoriyelHesaplama
@@ -124,18 +124,18 @@ namespace While
             #endregion
 
             #region TabanDonusturme_10tabanindan2tabanina
-            int sayi = Convert.ToInt32(Console.ReadLine());
-            int sonuc = 0;
-            int basamak = 1;
+            //int sayi = Convert.ToInt32(Console.ReadLine());
+            //int sonuc = 0;
+            //int basamak = 1;
 
-            while (sayi > 0)
-            {
-                sonuc += (sayi % 2) * basamak;
-                basamak *= 10;
-                sayi /= 2;
-            }
-            Console.WriteLine(sonuc);
-            Console.ReadKey();
+            //while (sayi > 0)
+            //{
+            //    sonuc += (sayi % 2) * basamak;
+            //    basamak *= 10;
+            //    sayi /= 2;
+            //}
+            //Console.WriteLine(sonuc);
+            //Console.ReadKey();
             #endregion
         }
     }

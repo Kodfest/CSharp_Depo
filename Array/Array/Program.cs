@@ -84,62 +84,62 @@ namespace Array
             #endregion
 
             #region arrayOrnek4
-            //string[] gunler = new string[7] { "pazartesi", "salı", "çarşamba", "perşembe", "cuma", "cumartesi", "pazar" };
+            string[] gunler = new string[7] { "pazartesi", "salı", "çarşamba", "perşembe", "cuma", "cumartesi", "pazar" };
 
-            //bool devam = true;
-            //while (devam)
-            //{
-            //    Console.Write("Kaçıncı Gün: ");
-            //    byte gun = Convert.ToByte(Console.ReadLine());
+            bool devam = true;
+            while (devam)
+            {
+                Console.Write("Kaçıncı Gün: ");
+                byte gun = Convert.ToByte(Console.ReadLine());
 
-            //    if (gun <= 7 && gun >= 1)
-            //    {
-            //        Console.WriteLine(gunler[gun-1]);
-            //    }
-            //    else
-            //    {
-            //        Console.WriteLine("Bir Haftada 7 Gün vardır.");
-            //    }
+                if (gun <= 7 && gun >= 1)
+                {
+                    Console.WriteLine(gunler[gun - 1]);
+                }
+                else
+                {
+                    Console.WriteLine("Bir Haftada 7 Gün vardır.");
+                }
 
-            //    Console.WriteLine("Devam etmek istiyorsan \"e\" tuşuna bas");
-            //    char c = Convert.ToChar(Console.ReadLine());
+                Console.WriteLine("Devam etmek istiyorsan \"e\" tuşuna bas");
+                char c = Convert.ToChar(Console.ReadLine());
 
-            //    if (c == 'e')
-            //    {
-            //        devam = true;
-            //        Console.Clear();
-            //    }
-            //    else
-            //    {
-            //        devam = false;
-            //    }
-            //}
+                if (c == 'e')
+                {
+                    devam = true;
+                    Console.Clear();
+                }
+                else
+                {
+                    devam = false;
+                }
+            }
             #endregion
 
             #region 2BoyutluDizi
-            int[,] sinavlar = new int[2, 3];
-            sinavlar[0, 0] = 1;
-            sinavlar[1, 0] = 20;
-            sinavlar[0, 1] = 2;
-            sinavlar[1, 1] = 30;
-            sinavlar[0, 2] = 3;
-            sinavlar[1, 2] = 40;
+            //int[,] sinavlar = new int[2, 3];
+            //sinavlar[0, 0] = 1;
+            //sinavlar[1, 0] = 20;
+            //sinavlar[0, 1] = 2;
+            //sinavlar[1, 1] = 30;
+            //sinavlar[0, 2] = 3;
+            //sinavlar[1, 2] = 40;
 
-            //for (int i = 0; i < 3; i++)
+            ////for (int i = 0; i < 3; i++)
+            ////{
+            ////    Console.WriteLine(sinavlar[0, i] + " - " + sinavlar[1, i]);
+            ////}
+
+
+            //for (int i = 0; i < 2; i++)
             //{
-            //    Console.WriteLine(sinavlar[0, i] + " - " + sinavlar[1, i]);
+            //    for (int j = 0; j < 3; j++)
+            //    {
+            //        Console.WriteLine(sinavlar[i,j]);
+            //    }
             //}
-            
 
-            for (int i = 0; i < 2; i++)
-            {
-                for (int j = 0; j < 3; j++)
-                {
-                    Console.WriteLine(sinavlar[i,j]);
-                }
-            }
-
-            Console.ReadKey();
+            //Console.ReadKey();
             #endregion
         }
     }
