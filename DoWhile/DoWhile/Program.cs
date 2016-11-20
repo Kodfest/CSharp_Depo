@@ -12,15 +12,15 @@ namespace DoWhile
         {
             int i = 0;
 
-            do
-            {
-                Console.WriteLine("Selam");
-            } while (i != 0);
-
-            //while(i != 0)
+            //do
             //{
             //    Console.WriteLine("Selam");
-            //}
+            //} while (i != 0);
+
+            while (i != 0)
+            {
+                Console.WriteLine("Selam");
+            }
         }
     }
 }
