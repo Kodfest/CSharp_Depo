@@ -8,6 +8,22 @@ namespace Array
 {
     class Program
     {
+        static int Bul(string _gun, string[] dizi)
+        {
+            int index = -1;
+
+            for (int i = 0; i < dizi.Length; i++)
+            {
+
+                if (dizi[i] == _gun)
+                {
+                    index = i;
+                }
+            }
+
+            return index;
+        }
+
         static void Main(string[] args)
         {
             #region arrayOrnek
@@ -84,36 +100,50 @@ namespace Array
             #endregion
 
             #region arrayOrnek4
-            string[] gunler = new string[7] { "pazartesi", "salı", "çarşamba", "perşembe", "cuma", "cumartesi", "pazar" };
+            //string[] gunler = new string[7] { "pazartesi", "salı", "çarşamba", "perşembe", "cuma", "cumartesi", "pazar" };
 
-            bool devam = true;
-            while (devam)
-            {
-                Console.Write("Kaçıncı Gün: ");
-                byte gun = Convert.ToByte(Console.ReadLine());
+            //bool devam = true;
+            //while (devam)
+            //{
+            //    Console.Write("Kaçıncı Gün: ");
+            //    byte gun = Convert.ToByte(Console.ReadLine());
 
-                if (gun <= 7 && gun >= 1)
-                {
-                    Console.WriteLine(gunler[gun - 1]);
-                }
-                else
-                {
-                    Console.WriteLine("Bir Haftada 7 Gün vardır.");
-                }
+            //    if (gun <= 7 && gun >= 1)
+            //    {
+            //        Console.WriteLine(gunler[gun - 1]);
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Bir Haftada 7 Gün vardır.");
+            //    }
 
-                Console.WriteLine("Devam etmek istiyorsan \"e\" tuşuna bas");
-                char c = Convert.ToChar(Console.ReadLine());
+            //    Console.WriteLine("Devam etmek istiyorsan \"e\" tuşuna bas");
+            //    char c = Convert.ToChar(Console.ReadLine());
 
-                if (c == 'e')
-                {
-                    devam = true;
-                    Console.Clear();
-                }
-                else
-                {
-                    devam = false;
-                }
-            }
+            //    if (c == 'e')
+            //    {
+            //        devam = true;
+            //        Console.Clear();
+            //    }
+            //    else
+            //    {
+            //        devam = false;
+            //    }
+            //}
+            #endregion
+
+            #region BirOncekininTamTersi
+            //string[] gunler = new string[7] { "pazartesi", "salı", "çarşamba", "perşembe", "cuma", "cumartesi", "pazar" };
+
+            //Console.Write("Hangi Gün: ");
+
+            //string gun = Convert.ToString(Console.ReadLine());
+
+            //int gelenDeger = Bul(gun, gunler);
+
+            //Console.WriteLine("{0} gün haftanın {1} . günüdür", gun, gelenDeger + 1);
+
+            //Console.ReadKey();
             #endregion
 
             #region 2BoyutluDizi
