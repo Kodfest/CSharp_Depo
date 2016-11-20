@@ -48,39 +48,72 @@ namespace Array
             #endregion
 
             #region arrayOrnek3
-            Random random = new Random();
-            int pozitif = 0, negatif = 0, sifir = 0;
-            int[] numbers = new int[10];
+            //Random random = new Random();
+            //int pozitif = 0, negatif = 0, sifir = 0;
+            //int[] numbers = new int[10];
 
-            for (int i = 0; i < numbers.Length; i++)
+            //for (int i = 0; i < numbers.Length; i++)
+            //{
+            //    numbers[i] = random.Next(-100, 100);
+            //}
+
+            //foreach (var sayi in numbers)
+            //{
+            //    Console.WriteLine(sayi);
+
+            //    if (sayi > 0)
+            //    {
+            //        pozitif++;
+            //    }
+            //    else if (sayi < 0)
+            //    {
+            //        negatif++;
+            //    }
+            //    else
+            //    {
+            //        sifir++;
+            //    }
+            //}
+
+            //Console.WriteLine();
+            //Console.WriteLine(" {0} Tane Pozitif var.", pozitif);
+            //Console.WriteLine(" {0} Tane Negatif var.", negatif);
+            //Console.WriteLine(" {0} Tane Sifir var.", sifir);
+
+            //Console.ReadKey();
+            #endregion
+
+            #region arrayOrnek4
+            string[] gunler = new string[7] { "pazartesi", "salı", "çarşamba", "perşembe", "cuma", "cumartesi", "pazar" };
+
+            bool devam = true;
+            while (devam)
             {
-                numbers[i] = random.Next(-100, 100);
-            }
+                Console.Write("Kaçıncı Gün: ");
+                byte gun = Convert.ToByte(Console.ReadLine());
 
-            foreach (var sayi in numbers)
-            {
-                Console.WriteLine(sayi);
-
-                if (sayi > 0)
+                if (gun <= 7 && gun >= 1)
                 {
-                    pozitif++;
-                }
-                else if (sayi < 0)
-                {
-                    negatif++;
+                    Console.WriteLine(gunler[gun-1]);
                 }
                 else
                 {
-                    sifir++;
+                    Console.WriteLine("Bir Haftada 7 Gün vardır.");
+                }
+
+                Console.WriteLine("Devam etmek istiyorsan \"e\" tuşuna bas");
+                char c = Convert.ToChar(Console.ReadLine());
+
+                if (c == 'e')
+                {
+                    devam = true;
+                    Console.Clear();
+                }
+                else
+                {
+                    devam = false;
                 }
             }
-
-            Console.WriteLine();
-            Console.WriteLine(" {0} Tane Pozitif var.", pozitif);
-            Console.WriteLine(" {0} Tane Negatif var.", negatif);
-            Console.WriteLine(" {0} Tane Sifir var.", sifir);
-
-            Console.ReadKey();
             #endregion
         }
     }
